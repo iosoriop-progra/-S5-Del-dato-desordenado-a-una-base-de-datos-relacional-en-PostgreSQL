@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: postgres-semana5
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5436:5432"
+    volumes:
+      - semana5_datos:/var/lib/postgresql
+
+volumes:
+  semana5_datos:

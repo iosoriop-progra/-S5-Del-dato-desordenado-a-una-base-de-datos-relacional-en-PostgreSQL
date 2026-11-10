@@ -1,0 +1,30 @@
+erDiagram
+    PRESTATARIO ||--o{ PRESTAMO : registra
+    PRESTAMO ||--|{ DETALLE_PRESTAMO : contiene
+    EQUIPO ||--o{ DETALLE_PRESTAMO : aparece_en
+
+    PRESTATARIO {
+        integer id_prestatario PK
+        varchar nombre
+        varchar correo UK
+    }
+    EQUIPO {
+        integer id_equipo PK
+        varchar codigo_equipo UK
+        varchar nombre
+        varchar categoria
+    }
+    PRESTAMO {
+        integer id_prestamo PK
+        integer id_prestatario FK
+        date fecha_prestamo
+        date fecha_devolucion_prevista
+        date fecha_devolucion_real
+        varchar estado
+    }
+    DETALLE_PRESTAMO {
+        integer id_detalle PK
+        integer id_prestamo FK
+        integer id_equipo FK
+        integer cantidad
+    }
