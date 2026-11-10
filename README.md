@@ -34,9 +34,4 @@ Comprueba la conexión con `SELECT current_database(), current_user;`.
 - Un equipo no se repite en dos líneas del mismo préstamo; la cantidad representa las unidades.
 - El flujo de registro debe asegurar que cada préstamo tenga al menos un detalle; las claves foráneas garantizan que cada detalle apunte a registros existentes.
 
-## Entrega
-- Repositorio GitHub público: PEGAR_URL
-- Video público de máximo 3 minutos: PEGAR_URL
-- Diagrama: `modelo.mmd`
 
-Antes de entregar, reemplaza los enlaces y comprueba que se abran en una ventana de incógnito.
