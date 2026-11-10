@@ -20,7 +20,8 @@
 Comprueba la conexión con `SELECT current_database(), current_user;`.
 
 ## Modelo
-Abre https://mermaid.live/ y pega el contenido de `modelo.mmd` para visualizar el diagrama.
+<img width="1025" height="1389" alt="image" src="https://github.com/user-attachments/assets/ba73668c-71e6-4187-bee9-293b2d119b59" />
+
 
 ## Decisiones de diseño
 - Un prestatario puede registrar varios préstamos; cada préstamo pertenece a un prestatario.
